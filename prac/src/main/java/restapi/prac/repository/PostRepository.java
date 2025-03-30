@@ -1,4 +1,9 @@
 package restapi.prac.repository;
 
-public interface PostRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import restapi.prac.model.Post;
+
+@Repository
+public interface PostRepository extends JpaRepository<Post, Long> {
 }
