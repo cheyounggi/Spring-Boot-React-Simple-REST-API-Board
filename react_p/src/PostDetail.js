@@ -4,7 +4,6 @@ import './css/detail.css';
 let PostDetail = () => {
     const { id } = useParams();
 
-    console.log(id);
     const post = {
         id,
         title: `${id}번째 게시글`,

@@ -11,6 +11,8 @@ import restapi.prac.service.PostService;
 
 import java.util.Optional;
 
+@RestController
+@RequestMapping("/api/posts")
 public class PostController {
     @Autowired
     private PostService postService;
